@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2175e3cc.css",
+    "main.js": "/static/js/main.a14b11d3.js",
+    "static/js/787.163d98c8.chunk.js": "/static/js/787.163d98c8.chunk.js",
+    "static/media/main_poster.png": "/static/media/main_poster.356310908e490530cd6d.png",
+    "static/media/siglent_background.png": "/static/media/siglent_background.009954778ac6547b5086.png",
+    "static/media/862796.jpg": "/static/media/862796.6c931c70b04886543039.jpg",
+    "static/media/870200.jpg": "/static/media/870200.899ff4c102272bca1ef6.jpg",
+    "static/media/osciloscope.png": "/static/media/osciloscope.5b245f182f35b8515927.png",
+    "static/media/power-block.png": "/static/media/power-block.854594ccab06dc57eb17.png",
+    "static/media/analizator.png": "/static/media/analizator.2af8e59f668377dbf91b.png",
+    "static/media/generator.png": "/static/media/generator.a9f4ea713fd9dd1ef45f.png",
+    "static/media/869148.jpg": "/static/media/869148.ae727d60e1a3e63ccda5.jpg",
+    "static/media/898512.jpg": "/static/media/898512.51a99d254727311e0b96.jpg",
+    "static/media/multimeter.png": "/static/media/multimeter.ba2725e470d6dcc6e24a.png",
+    "static/media/power-suply.png": "/static/media/power-suply.a421509662e192a027d3.png",
+    "static/media/862792.jpg": "/static/media/862792.3ed748b35bc746587c93.jpg",
+    "static/media/acsesor.png": "/static/media/acsesor.861e64af14e317f3616a.png",
+    "static/media/masteram-logo-ua.svg": "/static/media/masteram-logo-ua.fd8613ce8b058b7fd939f5d9c146c127.svg",
+    "static/media/logo-aoyue.svg": "/static/media/logo-aoyue.73f3b0b9b8d0b321557df30dee6df4bf.svg",
+    "static/media/logo-lukey.svg": "/static/media/logo-lukey.803dab81f9c2eb4290c29149bf8b5980.svg",
+    "static/media/logo.svg": "/static/media/logo.9eb46ce8f998e154e4a0.svg",
+    "static/media/logo-proskit.svg": "/static/media/logo-proskit.6a7fc5c2ab3610aa9e0fe2b345aface3.svg",
+    "static/media/logo-atten.svg": "/static/media/logo-atten.867f2ac8828f83522ced52c675b0705a.svg",
+    "static/media/logo-accta.svg": "/static/media/logo-accta.5609b2d360744419d938fe28b2841e02.svg",
+    "static/media/logo-unit.svg": "/static/media/logo-unit.bf25079297a829e14ef19520dc885909.svg",
+    "index.html": "/index.html",
+    "main.2175e3cc.css.map": "/static/css/main.2175e3cc.css.map",
+    "main.a14b11d3.js.map": "/static/js/main.a14b11d3.js.map",
+    "787.163d98c8.chunk.js.map": "/static/js/787.163d98c8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2175e3cc.css",
+    "static/js/main.a14b11d3.js"
+  ]
+}
