@@ -1,0 +1,10 @@
+.other-projects-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 60px;
+}
+.brand-icon {
+    height: auto;
+    max-width: 120px;
+    margin-left: 62px;
+}

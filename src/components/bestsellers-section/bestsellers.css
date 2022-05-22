@@ -1,0 +1,55 @@
+.bestseller-section-main-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.bestseller-section-container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.bestseller-item-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    transition: 0.2s;
+    margin: auto 10px;
+}
+.bestseller-item-main-container:hover p {
+    transition: 0.2s;
+ color: var(--masteram-brand-color);
+}
+.bestseller-item-main-container img {
+    max-width: 300px;
+}
+.bestseller-item-main-container p {
+    text-align: center;
+    font-weight: 700;
+}
+.show-more-button {
+    font-size: 14px;
+    margin: 30px auto;
+    color: var(--siglent-brand-color);
+    border: 1px solid var(--siglent-brand-color);
+    border-radius: 20px;
+    padding: 10px 25px;
+    background:none;
+    pointer-events: painted;
+    cursor:pointer;
+    transition: 0.2s;
+}
+.show-more-button:hover{
+    color: rgb(240, 233, 233);
+    background:var(--siglent-brand-color);
+    transition: 0.2s;
+}
+.visible {
+    display: block;
+}
+.invisible {
+    display: none;
+} 

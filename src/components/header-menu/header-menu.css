@@ -1,0 +1,117 @@
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+.header {
+    display: flex;
+    padding: 0px 40px;
+    height: 80px;
+    background-color: #192D4B;
+    justify-content:center;
+    align-items: center;
+    color: var(--def-btn-color);
+    font-family: 'Montserrat';
+    
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+}
+
+.nav-bar-menu
+{
+    height: 90%;
+    display: flex;
+    align-items: center;
+    
+}
+.nav-bar-menu li 
+{
+    display:inline-block;
+    margin: 0px 15px;
+    height: 90%;
+
+}
+.nav-bar-menu a {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    background-image: url('../../img-content/logo.svg');
+    display: block;
+    width: 160px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+.nav-btn{
+    color: var(--nav-btn-color);
+    transition: 0.2s;
+    width: 100%;
+    position: relative;
+}
+.nav-btn:hover {
+    color: var(--nav-btn-hover-color);
+}
+
+
+.nav-btn-with-list {
+    color: var(--nav-btn-color);
+    transition: 0.2s;
+    width: 100%;
+    position: relative;
+}
+.nav-btn-with-list:hover {
+    color: var(--nav-btn-hover-color);
+}
+.nav-btn-with-list:hover .header-list{
+    color: var(--nav-btn-hover-color);
+    display: block;
+    opacity: 1;
+
+    transition: 0.2s;
+}
+.header-list {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    color: aliceblue;
+    top: 80px;
+    left: -28px;
+    background-color: rgb(249 249 249);
+    width: 200px;
+    margin: 0px;
+    padding: 0px 10px;
+    box-shadow: 4px 5px 10px 0px rgba(0,0,0,0.1);
+    display: none;
+    opacity: 0;
+    transition: 0.2s;
+}
+.header-list:hover {
+    display:block;
+}
+.header-list .list_item {
+    color: var(--text-color);
+    min-height: 50px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+.header-list .list_item a {
+    color: #192D4B;
+    height: 60px;
+}
+.header-list .list_item a:hover {
+    color: var(--masteram-brand-color);
+    height: 60px;
+}

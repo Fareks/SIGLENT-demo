@@ -1,0 +1,86 @@
+.category-main-container {
+    display: flex;
+    flex-direction: column;
+}
+.category-items-main-container {
+}
+.category-items-container {
+    display: grid;
+    grid-template-columns: repeat( auto-fill, minmax(225px, 1fr) );
+    max-width: 1200px;
+    justify-items: center;
+    margin: 0 auto;
+}
+.category-item {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 240px;
+}
+.category-item-img {
+    max-width: 240px;
+    height: auto;
+}
+.path-container {
+    max-width: 1200px;
+    margin: 0 auto ;
+}
+.path {
+    /* float: left; */
+    width: 1200px;
+    display: flex;
+    margin: 30px 0px 0px 60px;
+    min-width: 600px;
+    font-size: 12px;
+    /* justify-content: center; */
+    align-self: flex-start;
+}
+.pathText {
+    float: left;
+    font-size: 13px;
+    color:rgb(184, 184, 184);
+    margin: 0px 3px;
+}
+
+/* loading circle */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to { 
+        transform: rotate(360deg);
+    }
+}
+ 
+
+ @-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to { 
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.load {
+	width: 100px;
+	height: 100px;
+	margin: 110px auto 0;
+	border:solid 10px #1b165f;
+	border-radius: 50%;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	 -webkit-transition: all 0.5s ease-in;
+    -webkit-animation-name:             rotate; 
+    -webkit-animation-duration:         1.0s; 
+    -webkit-animation-iteration-count:  infinite;
+    -webkit-animation-timing-function: linear;
+    	
+    	 transition: all 0.5s ease-in;
+    animation-name:             rotate; 
+    animation-duration:         1.0s; 
+    animation-iteration-count:  infinite;
+    animation-timing-function: linear; 
+}
