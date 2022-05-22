@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2175e3cc.css",
-    "main.js": "/static/js/main.a14b11d3.js",
+    "main.css": "/static/css/main.8462cba8.css",
+    "main.js": "/static/js/main.2ae2ddfd.js",
     "static/js/787.163d98c8.chunk.js": "/static/js/787.163d98c8.chunk.js",
     "static/media/main_poster.png": "/static/media/main_poster.356310908e490530cd6d.png",
     "static/media/siglent_background.png": "/static/media/siglent_background.009954778ac6547b5086.png",
@@ -26,12 +26,12 @@
     "static/media/logo-accta.svg": "/static/media/logo-accta.5609b2d360744419d938fe28b2841e02.svg",
     "static/media/logo-unit.svg": "/static/media/logo-unit.bf25079297a829e14ef19520dc885909.svg",
     "index.html": "/index.html",
-    "main.2175e3cc.css.map": "/static/css/main.2175e3cc.css.map",
-    "main.a14b11d3.js.map": "/static/js/main.a14b11d3.js.map",
+    "main.8462cba8.css.map": "/static/css/main.8462cba8.css.map",
+    "main.2ae2ddfd.js.map": "/static/js/main.2ae2ddfd.js.map",
     "787.163d98c8.chunk.js.map": "/static/js/787.163d98c8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2175e3cc.css",
-    "static/js/main.a14b11d3.js"
+    "static/css/main.8462cba8.css",
+    "static/js/main.2ae2ddfd.js"
   ]
 }
