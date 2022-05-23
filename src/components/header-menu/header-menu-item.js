@@ -32,7 +32,7 @@ const HeaderMenuItem = ({link, link_name,icon,have_list=false,btn_class}) => {
     }
 
     return(
-        <li>
+        <li className='nav-bar-list-item'>
             <Link to={link} className={btn_class}>{link_name} {icon}{list_item}</Link>
             
         </li>

@@ -106,6 +106,7 @@ a {
     display: flex;
     align-items: center;
     z-index: 2;
+    margin-bottom: 30px;
 }
 .header-list .list_item a {
     color: #192D4B;
@@ -114,4 +115,59 @@ a {
 .header-list .list_item a:hover {
     color: var(--masteram-brand-color);
     height: 60px;
+}
+.nav-bar-list-item {
+    margin-bottom: 10px;
+}
+/*MOBILE CONTAINER*/
+.nav-bar-menu-mobile-container
+{
+    width: 100px;
+    height: 34px;
+    background-color: #192D4B;
+}
+.nav-bar-menu-mobile-active {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #192D4B;
+    z-index: 2;
+}
+.nav-bar-menu-mobile-hidden {
+    position: absolute;
+    top:100%;
+    bottom: 50%;
+    display: none;
+}
+.hamburger {
+    position: absolute;
+    color: aliceblue;
+    right: 5%;
+    cursor: pointer;
+    z-index: 4;
+
+}
+
+
+@media screen and (max-width: 1099px) {
+    .nav-bar-menu {
+        display: none;
+    }
+    .nav-bar-list-item{
+        margin-bottom: 40px;
+        z-index: 3;
+    }
+
+}
+
+@media screen and (min-width:1100px) {
+    .nav-bar-menu-mobile-container {
+        display: none;
+    }
 }
