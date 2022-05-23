@@ -3,8 +3,15 @@ import { Link } from 'react-router-dom';
 import HeaderMenuItem from './header-menu-item';
 import {HiMenu} from "react-icons/hi"
 import { useState } from 'react';
+
+
+
 const HeaderMenuContainer = () => {
     const [isOpen,setOpen] = useState(false);
+    const closeMobileMenu = () => {
+        console.log("closingMenu")
+        setOpen(false);
+    };
     return (
         <header className='header'>
             <div className="header-container">
@@ -41,18 +48,18 @@ const HeaderMenuContainer = () => {
                 <ul className={isOpen ? "nav-bar-menu-mobile-active": "nav-bar-menu-mobile-hidden"}>
                         <HeaderMenuItem link="/" 
                         link_name="Головна"
-                        btn_class="nav-btn"/>
+                        btn_class="nav-btn" mobile_menu={closeMobileMenu}/>
                         <HeaderMenuItem link="/catalog" 
                         link_name="Продукція" 
-                        btn_class="nav-btn" />
+                        btn_class="nav-btn" mobile_menu={closeMobileMenu}/>
                         <HeaderMenuItem 
                         link="/videos" 
                         link_name={"Відео"}  
-                        btn_class="nav-btn" />
+                        btn_class="nav-btn" mobile_menu={closeMobileMenu}/>
                         <HeaderMenuItem 
                         link="/contacts" 
                         link_name="Контакти"
-                        btn_class= "nav-btn" />
+                        btn_class= "nav-btn" mobile_menu={closeMobileMenu}/>
                 </ul>
             </div>
             

@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 
-const HeaderMenuItem = ({link, link_name,icon,have_list=false,btn_class}) => {
+const HeaderMenuItem = ({link, link_name,icon,have_list=false,btn_class,mobile_menu}) => {
     let list_item = <span></span>;
     if (have_list) {
         list_item = <ul className='header-list'>
-            <li className="list_item">
+            <li className="list_item" >
                 <Link to="catalog/osciloscopes">Осцилографи</Link> 
             </li>
             <li className="list_item">
@@ -33,7 +33,7 @@ const HeaderMenuItem = ({link, link_name,icon,have_list=false,btn_class}) => {
 
     return(
         <li className='nav-bar-list-item'>
-            <Link to={link} className={btn_class}>{link_name} {icon}{list_item}</Link>
+            <Link to={link} className={btn_class} onClick={mobile_menu}>{link_name} {icon}{list_item} </Link>
             
         </li>
     );
