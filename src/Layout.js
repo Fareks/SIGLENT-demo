@@ -6,7 +6,10 @@ import FooterSection from './components/footer-section/footer-section';
      return(
          <>
             <HeaderMenuContainer/>  
-            <Outlet/>
+            <div className="main-content">
+                <Outlet/>
+            </div>
+            
             <FooterSection/>       
          </>
      );

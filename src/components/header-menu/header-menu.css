@@ -107,7 +107,6 @@ a {
     display: flex;
     align-items: center;
     z-index: 2;
-    margin-bottom: 30px;
 }
 .header-list .list_item a {
     color: #192D4B;
@@ -142,6 +141,7 @@ a {
     height: 100vh;
     background-color: #192D4B;
     z-index: 2;
+    padding: 0px;
 }
 .nav-bar-menu-mobile-hidden {
     position: absolute;
@@ -165,6 +165,15 @@ a {
     .nav-bar-list-item{
         margin-bottom: 40px;
         z-index: 3;
+    }
+    .header-list .list_item {
+        color: var(--text-color);
+        min-height: 50px;
+        vertical-align: middle;
+        display: flex;
+        align-items: center;
+        z-index: 2;
+        margin-bottom: 30px;
     }
 
 }

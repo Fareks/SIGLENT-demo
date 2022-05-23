@@ -29,10 +29,10 @@
 }
 .path {
     /* float: left; */
-    width: 1200px;
+    width: 100%;
     display: flex;
     margin: 30px 0px 0px 60px;
-    min-width: 600px;
+    min-width: 1000px;
     font-size: 12px;
     /* justify-content: center; */
     align-self: flex-start;
@@ -83,4 +83,15 @@
     animation-duration:         1.0s; 
     animation-iteration-count:  infinite;
     animation-timing-function: linear; 
+}
+
+@media screen and (max-width:1099px) {
+    .path {
+        width: 80%;
+        min-width: 60px;
+    }
+    .path-container {
+        width: 80%;
+        margin: 30px 0px 0px 12px;
+    }
 }
