@@ -37,6 +37,6 @@ h1 {
 p {
     color: var(--text-color);
 }
-*{
+/* *{
     outline: 1px solid red;
-    }
+    } */
