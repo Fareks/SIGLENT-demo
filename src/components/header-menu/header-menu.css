@@ -52,6 +52,7 @@ a {
     height: 35px;
     background-repeat: no-repeat;
     background-size:contain;
+    background-position: center;
 }
 .nav-btn{
     color: var(--nav-btn-color);
@@ -125,7 +126,8 @@ a {
     display: flex;
     align-items: center;
     width: 100px;
-    height: 34px;
+    height: 32px;
+    justify-content: flex-end;
     background-color: #192D4B;
 }
 .nav-bar-menu-mobile-active {

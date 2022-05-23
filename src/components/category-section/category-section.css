@@ -18,7 +18,7 @@
 .category-section-container {
     grid-template-columns: repeat( auto-fit, minmax(225px, 1fr) );
     display: grid;
-    width: 1200px;
+    /* width: 1200px; */
     margin: 10px 60px;
     gap: 40px;
     justify-items: center;
@@ -65,3 +65,12 @@
     transform: scale(1.1);
 }
 /* MEDIA */
+@media screen and (max-width:1099px) {
+    .category-section-container {
+        width: 90vw;
+    }
+    .img-block img{
+        width: 170px;
+        height: auto;
+    }
+}
