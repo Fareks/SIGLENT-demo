@@ -22,6 +22,8 @@
     margin: 10px 60px;
     gap: 40px;
     justify-items: center;
+    width: 80%;
+    max-width: 1200px;
 }
 .category-section-item-container {
     padding: 5px 5px;

@@ -46,3 +46,9 @@
     font-size: 12px;
     margin: 0px;
 }
+
+@media screen and (max-width:1099px) {
+    .footer-section-container {
+        padding: 10px 10px;
+    }
+}

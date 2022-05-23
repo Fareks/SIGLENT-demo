@@ -16,3 +16,12 @@
     justify-content:center;
     margin-top: 60px;
 }
+
+@media screen and (max-width:1099px) {
+   .label{
+    width: 80%;
+   } 
+   .label-container {
+       margin: 40px 0px;
+   }
+}
