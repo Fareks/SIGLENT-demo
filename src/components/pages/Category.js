@@ -4,12 +4,20 @@ import { useParams } from "react-router-dom";
 import offersJSON from "../../json-data/offers.json"
 import CategoryPath from "./Category-components/category-path";
 import { getCurrentCategoryUA } from "./Category-components/category-path" ;
-
+import RiLoaderLine from "react-icons/ri"
+import "./Category-components/category.css";
 //елемент категорії - лінк-картка товару
     const CategoryItem = ({link, offerName, picture}) => {
+        const [imgLoaded,setImgLoaded] = useState(false);
+        const imgLoader = () => {
+            if (imgLoaded == false) {
+                return (<div class="load"></div>);
+            } else if (imgLoaded == true)
+            return (<img src={picture} alt="" width="200" className="category-item-img" onLoad={setImgLoaded(true)}/>);
+        }
     return (
         <Link to={link} className="category-item">
-            <img src={picture} alt="" width="200" className="category-item-img"/>
+            {imgLoader()}
             <p className="category-item-name">{offerName}</p>
         </Link>
     );
