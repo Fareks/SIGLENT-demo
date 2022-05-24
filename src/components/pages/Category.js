@@ -8,16 +8,21 @@ import RiLoaderLine from "react-icons/ri"
 import "./Category-components/category.css";
 //елемент категорії - лінк-картка товару
     const CategoryItem = ({link, offerName, picture}) => {
-        const [imgLoaded,setImgLoaded] = useState(false);
+        const [imgIsLoaded, setimgIsLoaded] = useState(false);
+        const [imgClass, setImgClass] = useState({img_class:"category-item-img-disable",loading_bar:"img-load"});
         const imgLoader = () => {
-            if (imgLoaded == false) {
-                return (<div class="load"></div>);
-            } else if (imgLoaded == true)
-            return (<img src={picture} alt="" width="200" className="category-item-img" onLoad={setImgLoaded(true)}/>);
-        }
-    return (
+            if (!imgIsLoaded)
+            {
+                console.log("imgLoader!");
+                setImgClass({img_class:"category-item-img",loading_bar:"img-load-disable"});
+                setimgIsLoaded(true);
+            }
+
+        };
+             return (
         <Link to={link} className="category-item">
-            {imgLoader()}
+            <div className={imgClass.loading_bar}></div>
+            <img src={picture} alt="" width="200" className={imgClass.img_class} onLoad={ imgLoader() }/>
             <p className="category-item-name">{offerName}</p>
         </Link>
     );

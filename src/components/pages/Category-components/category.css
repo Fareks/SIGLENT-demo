@@ -14,7 +14,6 @@
 .category-item {
     padding: 20px;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     max-width: 240px;
@@ -22,6 +21,10 @@
 .category-item-img {
     max-width: 240px;
     height: auto;
+}
+.category-item-img-disable {
+    opacity: 0;
+    display: none;
 }
 .path-container {
     max-width: 1200px;
@@ -66,6 +69,7 @@
 
 .load {
 	width: 100px;
+    
 	height: 100px;
 	margin: 110px auto 0;
 	border:solid 10px #1b165f;
@@ -84,6 +88,49 @@
     animation-iteration-count:  infinite;
     animation-timing-function: linear; 
 }
+
+
+        @keyframes placeHolderShimmer {
+            0% {
+            background-position: -800px 0
+            }
+            100% {
+            background-position: 800px 0
+            }
+        }
+        .img-load {
+            width: 200px;
+            height: 200px;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            animation-name: placeHolderShimmer;
+            animation-timing-function: linear;
+            background-color: #f4f7fa;
+            background: linear-gradient(to right, #ebebee 8%, #fafcff 18%, #ebebf1 33%);
+            background-size: 800px 104px;
+            border-radius: 15px;
+            position: relative;
+        }
+        .img-load-disable {
+            opacity: 0;
+            display: none;
+            width: 200px;
+            height: 200px;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            animation-name: placeHolderShimmer;
+            animation-timing-function: linear;
+            background-color: #f4f7fa;
+            background: linear-gradient(to right, #ebebee 8%, #fafcff 18%, #ebebf1 33%);
+            background-size: 800px 104px;
+            border-radius: 15px;
+            position: relative;
+        }
+
+
+
 
 @media screen and (max-width:1099px) {
     .path {
