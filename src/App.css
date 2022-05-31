@@ -8,7 +8,7 @@
     --text-color:rgb(31, 30, 30);
     --nav-btn-color:aliceblue;
     --white-blue-background: #f2f8ff;
-    font-family: 'Montserrat';
+    font-family: 'Nunito Sans', sans-serif;
 }
 #root {
     min-height: 100vh;

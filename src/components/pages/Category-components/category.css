@@ -18,6 +18,9 @@
     flex-direction: column;
     max-width: 240px;
 }
+.category-item {
+    font-family: 'Nunito Sans', sans-serif;
+}
 .category-item-img {
     max-width: 240px;
     height: auto;

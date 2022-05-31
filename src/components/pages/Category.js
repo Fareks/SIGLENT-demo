@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
-import offersJSON from "../../json-data/offers.json"
+
 import CategoryPath from "./Category-components/category-path";
 import { getCurrentCategoryUA } from "./Category-components/category-path" ;
 import RiLoaderLine from "react-icons/ri"
@@ -28,8 +28,12 @@ import "./Category-components/category.css";
     );
     };
 
+//дістаємо дані для картки товару
+
+
+
 //загальний вигляд категорії
-    const Category = ({imgurl}) => {
+    const Category = ({all_offers}) => {
         //забираємо значення id при роутингу
         let CategoryId = useParams();
         //стайт на перевірку загрузки
@@ -44,13 +48,17 @@ import "./Category-components/category.css";
         }, [] );
 
         //фільтруємо товар по категоріям
-        let offers = offersJSON.filter((item) => {
+        let offers = all_offers.filter((item) => {
             return(item.category == CategoryId.categoryId)
         });
 
         //мапимо, вертаючи елементи "картка-оферу"
         let newOffers = offers.map((item) => {
-            return(<CategoryItem link={item.id} offerName = {item.offerName} picture={item.picture}/>);
+            return(<CategoryItem 
+                link={item.id} 
+                offerName = {item.offerName} 
+                picture={item.picture }
+            />);
         });
         
         //якщо загрузилось, то рендер

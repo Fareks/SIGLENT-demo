@@ -142,6 +142,7 @@ a {
     background-color: #192D4B;
     z-index: 2;
     padding: 0px;
+    font-size:20px;
 }
 .nav-bar-menu-mobile-hidden {
     position: absolute;
