@@ -10,7 +10,7 @@
     display: grid; 
     grid-template-columns: auto auto; 
     grid-template-rows: min-content min-content max-content 1fr; 
-    gap: 3px 125px;  
+    gap: 3px 40px;  
     justify-content: space-evenly; 
     align-content: space-evenly; 
     padding: 20px;
@@ -34,10 +34,13 @@
 }
 .offer-img {
     border-radius: 6px;
-    width: 400px;
-    height:  400px;
+    width: 480px;
+    height:  480px;
     grid-area: img;
     background-color: white ;
+}
+.description-label {
+    margin: 5px 0px 0px 20px;
 }
 .offer-buy-button {
     height: 40px;

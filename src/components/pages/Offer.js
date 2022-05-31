@@ -11,7 +11,7 @@ const Offer = ({getOfferData}) => {
     return (
     <div className='offer-container-main'>
         <div className="main-section">
-            <img src={offerData.picture} alt="" width="300" height="300" srcset=""  className="offer-img"/>
+            <img src={offerData.picture} alt="" width="600" height="600" srcset=""  className="offer-img"/>
             <p className="offer-name">{offerData.offerName}</p>
             <p className="offer-id">Арктикул: {offerData.id}</p>
             <div className="short-description" 
@@ -20,7 +20,7 @@ const Offer = ({getOfferData}) => {
         </div>
 
         <Label text="Опис" />
-        <div className="offer-description"
+        <div className="offer-description description-label"
         dangerouslySetInnerHTML={{ __html: offerData.description_ua }}>
         </div>
         
