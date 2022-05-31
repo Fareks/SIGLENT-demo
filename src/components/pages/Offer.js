@@ -19,8 +19,8 @@ const Offer = ({getOfferData}) => {
             <button className="offer-buy-button">КУПИТИ</button>
         </div>
 
-        <Label text="Опис" />
-        <div className="offer-description description-label"
+        <Label text="Опис" class_name="description-label"/>
+        <div className="offer-description "
         dangerouslySetInnerHTML={{ __html: offerData.description_ua }}>
         </div>
         
