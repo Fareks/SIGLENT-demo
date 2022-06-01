@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import './Category-components/offer.css'
 import Label from "../other-projects-section/label";
-
+import CategoryPath from "./Category-components/category-path";
 
 const Offer = ({getOfferData}) => {
     const params = useParams();
@@ -10,6 +10,8 @@ const Offer = ({getOfferData}) => {
 
     return (
     <div className='offer-container-main'>
+        <CategoryPath 
+        path={[{value: "Каталог",type:"catalog"},{value:params.categoryId,type:"category"}]} />
         <div className="main-section">
             <img src={offerData.picture} alt="" width="600" height="600" srcset=""  className="offer-img"/>
             <p className="offer-name">{offerData.offerName}</p>

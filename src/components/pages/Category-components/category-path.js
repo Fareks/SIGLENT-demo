@@ -16,14 +16,38 @@ const getCurrentCategoryUA = (category_name) => {
     return (<Link to={`/catalog/${category_name}`} className="pathText">{categoryTranslate[category_name]}</Link>);
 }
 
-const CategoryPath = ({category}) => {
+const getPath = (path) => {
+    return (path.map((item) => {
+        switch (item.type) {
+            case "catalog":
+                return (
+                    <>
+                    <span> {' > '} </span>
+                    <Link to="/catalog/" className="pathText">Каталог</Link>
+                    </>
+                )
+            case "category":
+                console.log();
+                return (
+                    <>
+                    <span> {' > '} </span>
+                    <Link to={`/catalog/${item.value}`} className="pathText">{categoryTranslate[item.value]}</Link>
+                    </>
+                )
+               
+            default:
+                break;
+        }
+    }));
+};
+
+const CategoryPath = ({path}) => {
 return (
     <>
     <div className="path-container">
     <div className="path">
         <Link to="/" className="pathText">Головна</Link>
-        <p className="pathText"> {' > '} </p>
-        {getCurrentCategoryUA(category)}
+        {getPath(path)}
     </div>
     </div>
     

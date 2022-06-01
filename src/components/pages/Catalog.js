@@ -11,7 +11,7 @@ let categories_list = ["osciloscopes","signal_generators","analizators","power_s
 const Catalog = () => {
     return (
      <div>
-         <CategoryPath/>
+         <CategoryPath path={[{value:"Головна",type:"catalog"}]}/>
          <CategorySection/>
      </div>
     );

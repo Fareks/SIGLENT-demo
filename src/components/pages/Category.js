@@ -13,7 +13,6 @@ import "./Category-components/category.css";
         const imgLoader = () => {
             if (!imgIsLoaded)
             {
-                console.log("imgLoader!");
                 setImgClass({img_class:"category-item-img",loading_bar:"img-load-disable"});
                 setimgIsLoaded(true);
             }
@@ -64,10 +63,10 @@ import "./Category-components/category.css";
         //якщо загрузилось, то рендер
         if (isLoaded)
         {
+
             return ( //вертаємо всі товари категорії
             <div className="category-main-container">
-                 
-                 <CategoryPath category = {CategoryId.categoryId} />
+                 <CategoryPath path = {[{value:"Каталог",type:"catalog"},{value:CategoryId.categoryId,type:"category"}]} />
                  <div className="category-items-main-container">
                     <div className="category-items-container">
                     {newOffers}

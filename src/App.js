@@ -11,9 +11,12 @@ import { Layout } from './Layout';
 import Category from './components/pages/Category';
 import Offer from './components/pages/Offer';
 import { useEffect, useState } from 'react';
-
+const cheerio = require('cheerio');
 function App() { 
-  
+const axios  = require('axios');
+
+
+
     function getOfferData (currentId) {
      
       return (offersJSON.filter(item => item.id === currentId)[0]);
