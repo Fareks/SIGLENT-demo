@@ -9,7 +9,7 @@ const categoryTranslate = {
     analizators:"Аналізатори спектру",
     power_suply:"Лабораторні блоки живлення",
     multimeters:"Мультиметри",
-    power_load:"Навантадення електронні",
+    power_load:"Навантаження електронні",
     accessories:"Аксесуари",
 };
 const getCurrentCategoryUA = (category_name) => {

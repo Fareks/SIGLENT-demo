@@ -30,17 +30,18 @@
     display: none;
 }
 .path-container {
-    max-width: 1200px;
-    margin: 0 auto ;
+    width: clamp(300px, 1200px, 1300px);
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 .path {
-    /* float: left; */
     width: 100%;
     display: flex;
     margin: 30px 0px 0px 60px;
     min-width: 1000px;
     font-size: 12px;
-    /* justify-content: center; */
     align-self: flex-start;
 }
 .pathText {
