@@ -9,7 +9,6 @@ import { useState } from 'react';
 const HeaderMenuContainer = () => {
     const [isOpen,setOpen] = useState(false);
     const closeMobileMenu = () => {
-        console.log("closingMenu")
         setOpen(false);
     };
     return (

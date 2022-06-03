@@ -32,6 +32,7 @@ const axios  = require('axios');
           <Route path='catalog/' element={<Catalog />} />
           <Route path='catalog/:categoryId' element={<Category all_offers={offersJSON}/>}/>
           <Route path='catalog/:categoryId/:offerId' element={<Offer getOfferData = {getOfferData}/>}/>
+          <Route path='/offer/:offerId' element={<Offer getOfferData = {getOfferData}/>}/>
           <Route path='contacts' element={<Contacts />} />
           <Route path='videos' element={<Videos />} />
         </Route>
