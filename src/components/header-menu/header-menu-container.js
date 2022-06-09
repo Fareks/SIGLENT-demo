@@ -37,6 +37,11 @@ const HeaderMenuContainer = () => {
             link_name="Контакти"
             btn_class= "nav-btn" />
 
+            <HeaderMenuItem 
+            link="/authors" 
+            link_name={"Автори"}  
+            btn_class="nav-btn" />
+
             </ul>
             <div className="nav-bar-menu-mobile-container">
                 <HiMenu 
@@ -58,6 +63,10 @@ const HeaderMenuContainer = () => {
                         <HeaderMenuItem 
                         link="/contacts" 
                         link_name="Контакти"
+                        btn_class= "nav-btn" mobile_menu={closeMobileMenu}/>
+                        <HeaderMenuItem 
+                        link="/authors" 
+                        link_name="Автори"
                         btn_class= "nav-btn" mobile_menu={closeMobileMenu}/>
                 </ul>
             </div>

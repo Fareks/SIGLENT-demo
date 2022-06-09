@@ -10,6 +10,7 @@ import Videos from './components/pages/Videos';
 import { Layout } from './Layout';
 import Category from './components/pages/Category';
 import Offer from './components/pages/Offer';
+import Autors from './components/pages/Authors-page/autors'
 import { useEffect, useState } from 'react';
 const cheerio = require('cheerio');
 function App() { 
@@ -35,6 +36,7 @@ const axios  = require('axios');
           <Route path='/offer/:offerId' element={<Offer getOfferData = {getOfferData}/>}/>
           <Route path='contacts' element={<Contacts />} />
           <Route path='videos' element={<Videos />} />
+          <Route path='authors' element={<Autors />} />
         </Route>
 
       </Routes>
