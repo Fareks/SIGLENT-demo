@@ -4,14 +4,14 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const MainSection = () => {
     return (
-        <motion.div
-        initial={{opacity:0}}
-        animate={{opacity:1}}
-        transition={{duration:1}}
-        >
+        <div>
             <div className="poster-and-main-text">
                 <div className="poster-area">
-                    <img className="main-poster"
+                    <motion.img 
+                    initial={{opacity:0, x:-30}}
+                    animate={{opacity:1,x:0}}
+                    transition={{delay:0.1,duration:0.3, ease:"easeOut"}}
+                    className="main-poster"
                     src={main_poster} 
                     alt="alternatetext" 
                     width="934"
@@ -25,12 +25,14 @@ const MainSection = () => {
                     <motion.h1
                     initial={{opacity:0, x:-30}}
                     animate={{opacity:1,x:0}}
-                    transition={{delay:0.3,duration:0.3, ease:"easeOut"}}> ОФІЦІЙНИЙ ДИСТРИБ’ЮТОР БРЕНДУ SIGLENT</motion.h1>
+                    transition={{delay:0.3,duration:0.3, ease:"easeOut"}}
+                    > ОФІЦІЙНИЙ ДИСТРИБ’ЮТОР БРЕНДУ SIGLENT</motion.h1>
                     <motion.p
                     initial={{opacity:0, x:-30}}
                     animate={{opacity:1,x:0}}
                     transition={{delay:0.5,duration:0.3, ease:"easeOut"}}
-                    className="main-text-secondary">
+                    className="main-text-secondary"
+                    >
                     на території України – магазин інструментів 
                     та обладнання Masteram. <br />
                     Широкий асортимент оригінальних товарів 
@@ -48,7 +50,7 @@ const MainSection = () => {
                         </motion.a> 
                 </div>
             </div>
-        </motion.div>
+        </div>
     );
 }
 
