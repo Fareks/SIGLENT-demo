@@ -5,9 +5,12 @@
 }
 .footer-section-container {
     padding:40px 60px;
-    display: flex;
+    display: grid;
     align-items: flex-start;
-    gap:30px;
+    align-self: center;
+    justify-items: center;
+    grid-template-columns: repeat( auto-fill, minmax(225px, 1fr) );
+    gap: 30px;
     justify-content: center;
     width: clamp(400px,1200px,1400px);
     flex-wrap: wrap;
@@ -17,6 +20,7 @@
 }
 .footer-icons {
     display: flex;
+    justify-content: center;
 }
 .media-icon {
     margin: 5px;
@@ -49,6 +53,6 @@
 
 @media screen and (max-width:1099px) {
     .footer-section-container {
-        padding: 10px 10px;
+        padding: 40px 40px;
     }
 }
