@@ -10,7 +10,7 @@ const MainSection = () => {
                     <motion.img 
                     initial={{opacity:0}}
                     animate={{opacity:1}}
-                    transition={{delay:2.1,duration:0.3, ease:"easeOut"}}
+                    transition={{delay:0.1,duration:0.3, ease:"easeOut"}}
                     className="main-poster"
                     src={main_poster} 
                     alt="alternatetext" 
@@ -25,12 +25,12 @@ const MainSection = () => {
                     <motion.h1
                     initial={{opacity:0}}
                     animate={{opacity:1}}
-                    transition={{delay:2.3,duration:0.3, ease:"easeOut"}}
+                    transition={{delay:0.3,duration:0.3, ease:"easeOut"}}
                     > ОФІЦІЙНИЙ ДИСТРИБ’ЮТОР БРЕНДУ SIGLENT</motion.h1>
                     <motion.p
                     initial={{opacity:0}}
                     animate={{opacity:1}}
-                    transition={{delay:2.5,duration:0.3, ease:"easeOut"}}
+                    transition={{delay:0.5,duration:0.3, ease:"easeOut"}}
                     className="main-text-secondary"
                     >
                     на території України – магазин інструментів 

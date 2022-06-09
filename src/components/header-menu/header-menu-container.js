@@ -49,15 +49,6 @@ const HeaderMenuContainer = () => {
                     size='40px'
                     onClick={() => {setOpen(!isOpen)}}
                 />
-                <motion.div
-                style={{color:"white"}}
-                initial={{x:-200}}
-                animate={{x:0}}
-                transition={{duration:4}}
-                >
-                123454
-
-                </motion.div>
                 <ul className={isOpen ? "nav-bar-menu-mobile-active": "nav-bar-menu-mobile-hidden"}>
                         <HeaderMenuItem link="/" 
                         link_name="Головна"
