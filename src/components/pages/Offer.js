@@ -3,13 +3,19 @@ import { useParams } from "react-router-dom";
 import './Category-components/offer.css'
 import Label from "../other-projects-section/label";
 import CategoryPath from "./Category-components/category-path";
+import { motion, AnimatePresence } from "framer-motion";
+
 
 const Offer = ({getOfferData}) => {
 
     const params = useParams();
     const offerData = getOfferData(params.offerId);;
     return (
-    <div className='offer-container-main'>
+        
+    <motion.div 
+    initial={{opacity:0}}
+    animate={{opacity:1}}
+    className='offer-container-main'>
         <CategoryPath 
         path={[{value: "Каталог",type:"catalog"},{value:params.categoryId,type:"category"}]} />
         <div className="main-section">
@@ -26,7 +32,7 @@ const Offer = ({getOfferData}) => {
         dangerouslySetInnerHTML={{ __html: offerData.description_ua }}>
         </div>
         
-    </div>
+    </motion.div>
 );
 };
 

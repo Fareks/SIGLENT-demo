@@ -96,6 +96,7 @@ a {
     display: none;
     opacity: 0;
     transition: 0.2s;
+    z-index: 2;
 }
 .header-list:hover {
     display:block;
@@ -128,6 +129,7 @@ a {
     height: 32px;
     justify-content: flex-end;
     background-color: #192D4B;
+    
 }
 .nav-bar-menu-mobile-active {
     display: flex;
@@ -143,6 +145,7 @@ a {
     z-index: 2;
     padding: 0px;
     font-size:20px;
+    z-index:3;
 }
 .nav-bar-menu-mobile-hidden {
     position: absolute;

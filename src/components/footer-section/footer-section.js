@@ -12,22 +12,22 @@ const FooterSection = () => {
                 – магазин інструментів та 
                 обладнання Masteram.</p>
             <div className="footer-icons">
-                <a href="" className='icon-item'>
+                <a href="https://www.facebook.com/masteram.store" className='icon-item'>
                     <img src={require("../../img-content/icons/media-icons/fb-media-icon.png")} 
                     alt="" 
                     className='media-icon'/>
                 </a>
-                <a href=""  className='icon-item'>
+                <a href="https://www.instagram.com/masteram_ua/"  className='icon-item'>
                     <img src={require("../../img-content/icons/media-icons/inst-media-icon.png")} 
                     alt="" 
                     className='media-icon' />
                 </a>
-                <a href="" className='icon-item'>
+                <a href="https://www.youtube.com/user/MasteramTV" className='icon-item'>
                     <img src={require("../../img-content/icons/media-icons/yt-media-icon.png")} 
                     alt="" 
                     className='media-icon' />
                 </a>
-                <a href="" className='icon-item'>
+                <a href="https://t.me/masteram_ua" className='icon-item'>
                     <img src={require("../../img-content/icons/media-icons/tg-media-icon.png")} 
                     alt="" 
                     className='media-icon' />

@@ -1,8 +1,14 @@
 import "./main-section.css"
 import main_poster from "../../img-content/main_poster.png"
+import { motion, AnimatePresence } from "framer-motion";
+
 const MainSection = () => {
     return (
-        <div>
+        <motion.div
+        initial={{opacity:0}}
+        animate={{opacity:1}}
+        transition={{duration:1}}
+        >
             <div className="poster-and-main-text">
                 <div className="poster-area">
                     <img className="main-poster"
@@ -12,23 +18,37 @@ const MainSection = () => {
                     height="408"
                     />
                 </div>
-                <div className="main-text-area">
-                    <h1> ОФІЦІЙНИЙ ДИСТРИБ’ЮТОР БРЕНДУ SIGLENT</h1>
-                    <p className="main-text-secondary">
+                <div
+                
+
+                className="main-text-area">
+                    <motion.h1
+                    initial={{opacity:0, x:-30}}
+                    animate={{opacity:1,x:0}}
+                    transition={{delay:0.3,duration:0.3, ease:"easeOut"}}> ОФІЦІЙНИЙ ДИСТРИБ’ЮТОР БРЕНДУ SIGLENT</motion.h1>
+                    <motion.p
+                    initial={{opacity:0, x:-30}}
+                    animate={{opacity:1,x:0}}
+                    transition={{delay:0.5,duration:0.3, ease:"easeOut"}}
+                    className="main-text-secondary">
                     на території України – магазин інструментів 
                     та обладнання Masteram. <br />
                     Широкий асортимент оригінальних товарів 
                     SIGLENT напряму від виробника можна придбати з 
                     гарантією на сайті masteram.ua.
-                    </p>
-                        <a href="http://" 
+                    </motion.p>
+                        <motion.a 
+                        initial={{opacity:0}}
+                        animate={{opacity:1}}
+                        transition={{delay:0.7,duration:0.3, ease:"easeOut"}}
+                        href="http://" 
                         className="button-link"
                         >
                         НА САЙТ MASTERAM.COM.UA
-                        </a> 
+                        </motion.a> 
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 }
 

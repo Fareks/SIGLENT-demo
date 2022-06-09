@@ -19,7 +19,6 @@ const VideoItems = ({video_data,set_cur_video}) => {
                     </div>
                     <p>{item.name}</p>
                      <img src={item.img} alt="" className='main-video-img'/>
-                     
                 </div>
             );
         });
@@ -66,7 +65,6 @@ const Videos = () => {
     return (
         
      <div className='video-section-container-main'>
-         
          <div className="video-header">
              <p className='video-header-text-1'>Огляди продукції Siglent</p>
              <p className='video-header-text-2'>Дивись останні відеоогляди та дізнайся все про продукцію SIGLENT</p>

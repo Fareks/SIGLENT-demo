@@ -51,6 +51,14 @@
     margin: 0px 3px;
 }
 
+.empty-category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px;
+}
+
+
 /* loading circle */
 @keyframes rotate {
     from {
