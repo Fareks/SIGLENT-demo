@@ -5,12 +5,14 @@ import Benefits from "../benefits-section/benefits";
 import Bestsellers from "../bestsellers-section/bestsellers";
 import OtherProjects from "../other-projects-section/other-projects";
 import VideoSection from "../video-section/video_section";
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useState } from "react";
 import { Route , Routes , Link } from 'react-router-dom';
 import Videos from "./Videos";
 
 
 const Homepage = () => {
+
+    const [openBestsellers,setOpenBestsellers] = useState(false);
     return (
         <Suspense fallback={<div class="load"></div>}>
             <div>

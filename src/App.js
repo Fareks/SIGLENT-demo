@@ -6,7 +6,7 @@ import React,{lazy, Suspense} from 'react';
 //pages
 // import Homepage from './components/pages/Homepage';
 // import Catalog from './components/pages/Catalog';
-import Contacts from './components/pages/Contacts';
+// import Contacts from './components/pages/Contacts';
 // import Videos from './components/pages/Videos';
 import { Layout } from './Layout';
 // import Category from './components/pages/Category';
@@ -21,6 +21,7 @@ const Videos  = React.lazy(() => import('./components/pages/Videos'));
 const Autors  = React.lazy(() => import('./components/pages/Authors-page/autors'));
 const Offer  = React.lazy(() => import('./components/pages/Offer'));
 const Category  = React.lazy(() => import('./components/pages/Category'));
+const Contacts  = React.lazy(() => import('./components/pages/Contacts'));
 
 function App() { 
 const axios  = require('axios');

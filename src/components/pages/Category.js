@@ -10,23 +10,13 @@ import "./Category-components/category.css";
 import sad_icon from "../../img-content/icons/sad.png"
 //елемент категорії - лінк-картка товару
     const CategoryItem = ({link, offerName, picture}) => {
-        const [imgIsLoaded, setimgIsLoaded] = useState(false);
-        const [imgClass, setImgClass] = useState({img_class:"category-item-img-disable",loading_bar:"img-load"});
-        const imgLoader = () => {
-            if (!imgIsLoaded)
-            {
-                setImgClass({img_class:"category-item-img",loading_bar:"img-load-disable"});
-                setimgIsLoaded(true);
-            }
-
-        };
+   
              return (
                  <motion.div
                  initial={{opacity:0}}
                  animate={{opacity:1}}>
                     <Link to={link} className="category-item">
-                        <div className={imgClass.loading_bar}></div>
-                        <img src={picture} alt="" width="200" className={imgClass.img_class} onLoad={ imgLoader() }/>
+                        <img src={picture} alt="" width="200" className="category-item-img" />
                         <p className="category-item-name">{offerName}</p>
                     </Link>
                 </motion.div>
