@@ -44,21 +44,11 @@ const HeaderMenuContainer = () => {
 
             </ul>
             <div className="nav-bar-menu-mobile-container">
-               
-                
-                    <HiMenu 
+                <HiMenu 
                     className='hamburger' 
                     size='40px'
                     onClick={() => {setOpen(!isOpen)}}
-                    />
-                
-                <motion.div 
-                style={{color:"white",margin:"20px"}}
-                initial={{opacity:0,x:-100}}
-                animate={{opacity:1,x:0}}
-                transition={{delay:2,duration:2}}
-                whileTap={{scale:1.41}}
-                >123</motion.div>
+                />
                 <ul className={isOpen ? "nav-bar-menu-mobile-active": "nav-bar-menu-mobile-hidden"}>
                         <HeaderMenuItem link="/" 
                         link_name="Головна"
