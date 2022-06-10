@@ -14,7 +14,9 @@ import sad_icon from "../../img-content/icons/sad.png"
              return (
                  <motion.div
                  initial={{opacity:0}}
-                 animate={{opacity:1}}>
+                 animate={{opacity:1}}
+                 transition={{delay:0.2}}
+                 >
                     <Link to={link} className="category-item">
                         <img src={picture} alt="" width="200" className="category-item-img" />
                         <p className="category-item-name">{offerName}</p>
@@ -32,16 +34,6 @@ import sad_icon from "../../img-content/icons/sad.png"
     const Category = ({all_offers}) => {
         //забираємо значення id при роутингу
         let CategoryId = useParams();
-        //стайт на перевірку загрузки
-        const [isLoaded,setIsLoaded] = useState(false);
-
-        //при загрузці міняємо стейт загрузки
-        useEffect( () => {
-            let timer = setTimeout(() => setIsLoaded(true), 300);
-            return () => {
-                clearTimeout(timer);
-            };
-        }, [] );
 
         //фільтруємо товар по категоріям
         let offers = all_offers.filter((item) => {
@@ -56,11 +48,6 @@ import sad_icon from "../../img-content/icons/sad.png"
                 picture={item.picture }
             />);
         });
-        console.log(newOffers)
-        //якщо загрузилось, то рендер
-        if (isLoaded)
-        {
-
             return ( //вертаємо всі товари категорії
             <div className="category-main-container">
                  <CategoryPath path = {[{value:"Каталог",type:"catalog"},{value:CategoryId.categoryId,type:"category"}]} />
@@ -81,11 +68,6 @@ import sad_icon from "../../img-content/icons/sad.png"
                  </div>
             </div>
             );
-        } else if (!isLoaded){
-            return(<div class="load"></div>);
-            
-        }
-
 
     };
 
