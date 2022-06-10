@@ -1,8 +1,15 @@
 import './benefits.css';
+import { motion } from 'framer-motion';
+
 const Benefits = () => {
 return (
     <div className="benefit-main-container">
-        <div className="benefit-item">
+        <motion.div
+        initial={{opacity:0,x:-20}}
+        whileInView={{opacity:1,x:0}}
+        viewport={{once:true}}
+        transition={{delay:0.4}}
+         className="benefit-item">
             <img src={
                 require("../../img-content/icons/benefit_icon_1.png")}
                 alt="" />
@@ -15,8 +22,13 @@ return (
             якісне та чітке дотримання гарантійних 
             умов.
             </p>
-        </div>
-        <div className="benefit-item">
+        </motion.div>
+        <motion.div 
+        initial={{opacity:0,x:-20}}
+        whileInView={{opacity:1,x:0}}
+        viewport={{once:true}}
+        transition={{delay:0.4}}
+        className="benefit-item">
             <img src={
                 require("../../img-content/icons/benefit_icon_2.png")}
                 alt="" />
@@ -28,8 +40,13 @@ return (
                 щоб вони завжди містили актуальну 
                 інформацію про продукт та ціни. 
             </p>
-        </div>
-        <div className="benefit-item" data-wow-duration="2s" data-wow-delay="5s">
+        </motion.div>
+        <motion.div 
+        initial={{opacity:0,x:-20}}
+        whileInView={{opacity:1,x:0}}
+        viewport={{once:true}}
+        transition={{delay:0.4}}
+        className="benefit-item" data-wow-duration="2s" data-wow-delay="5s">
             <img src={
                 require("../../img-content/icons/benefit_icon_3.png")}
                 alt="" />
@@ -42,7 +59,7 @@ return (
                  Дніпрі, Львові та Харкові ви можете забрати 
                  товар самостійно з наших офісів. 
             </p>
-        </div>
+        </motion.div>
     </div>
 );
 };
