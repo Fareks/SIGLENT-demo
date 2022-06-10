@@ -20,6 +20,7 @@ const AutorItem = ({icon,name,credits,social_icon=false,linkedin_link,is_link_bu
         whileHover={{scale:1.01,backgroundColor:"#F2F4FA"}}
         className={is_link_button ? "autor-card-main-container-link" : "autor-card-main-container"}
         href={is_link_button ? link : false}
+        target="_blank"
         >
             <div className="image-zone">
                <img src={icon}  height="90" width="90" alt="" />
@@ -61,7 +62,7 @@ return (
                 name="Олена Лишак"
                 credits="Дизайнер"
                 social_icon={linkedin}
-                linkedin_link=""
+                linkedin_link="https://www.linkedin.com/in/olena-lyshak-831885241"
                 />
 
                 <AutorItem 
@@ -69,7 +70,7 @@ return (
                 name="Валентин Поліщук"
                 credits="Frontend"
                 social_icon={linkedin}
-                linkedin_link=""
+                linkedin_link="https://www.linkedin.com/in/valentine-polischuk-b85478206/"
                 />
 
                 <AutorItem 
@@ -77,7 +78,7 @@ return (
                 name="Марта Поздровська"
                 credits="Контент-менеджер"
                 social_icon={linkedin}
-                linkedin_link=""
+                linkedin_link="https://www.linkedin.com/in/%D0%BC%D0%B0%D1%80%D1%82%D0%B0-%D0%BF%D0%BE%D0%B7%D0%B4%D1%80%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%B0-17b7a6241/"
                 />
 
                 <AutorItem 
@@ -85,7 +86,7 @@ return (
                 name="Маркіян Грещак"
                 credits="Контент-менеджер"
                 social_icon={linkedin}
-                linkedin_link=""
+                linkedin_link="https://www.linkedin.com/in/%D0%BC%D0%B0%D1%80%D0%BA%D1%96%D1%8F%D0%BD-%D0%B3%D1%80%D0%B5%D1%89%D0%B0%D0%BA-448069217"
                 />
             </div>
         </div>

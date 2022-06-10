@@ -43,7 +43,8 @@ const MainSection = () => {
                         initial={{opacity:0}}
                         animate={{opacity:1}}
                         transition={{delay:0.7,duration:0.3, ease:"easeOut"}}
-                        href="http://" 
+                        href="https://masteram.com.ua/uk/brands/siglent/" 
+                        target="_blank"
                         className="button-link"
                         >
                         НА САЙТ MASTERAM.COM.UA

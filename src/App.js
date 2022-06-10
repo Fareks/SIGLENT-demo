@@ -2,7 +2,7 @@ import './App.css';
 import { Route , Routes } from 'react-router-dom';
 import offersJSON from "./json-data/offers.json"
 import React,{lazy, Suspense} from 'react';
-
+import {motion, AnimatePresence} from 'framer-motion'
 //pages
 // import Homepage from './components/pages/Homepage';
 // import Catalog from './components/pages/Catalog';
@@ -34,26 +34,30 @@ const axios  = require('axios');
     }
     
   return (
-    
       <div className="App">
-        
-        <Suspense fallback={<div className='load'></div>}>
-            <Routes>
-            <Route path='/' element={<Layout/>}>
-            <Route index element={<Homepage />}/>
-              <Route path='catalog/' element={<Catalog />} />
-              <Route path='catalog/:categoryId' 
-              element={
-                  <Category all_offers={offersJSON}/>
-              }/>
-              <Route path='catalog/:categoryId/:offerId' element={<Offer getOfferData = {getOfferData}/>}/>
-              <Route path='/offer/:offerId' element={<Offer getOfferData = {getOfferData}/>}/>
-              <Route path='contacts' element={<Contacts />} />
-              <Route path='videos' element={<Videos />} />
-              <Route path='authors' element={<Autors />} />
-            </Route>
-          </Routes>
-          </Suspense>
+    
+       <Suspense fallback={
+          <div 
+            className='load'>
+          </div>
+      }>
+          <Routes>
+          <Route path='/' element={<Layout/>}>
+          <Route index element={<Homepage />}/>
+            <Route path='catalog/' element={<Catalog />} />
+            <Route path='catalog/:categoryId' 
+            element={
+                <Category all_offers={offersJSON}/>
+            }/>
+            <Route path='catalog/:categoryId/:offerId' element={<Offer getOfferData = {getOfferData}/>}/>
+            <Route path='/offer/:offerId' element={<Offer getOfferData = {getOfferData}/>}/>
+            <Route path='contacts' element={<Contacts />} />
+            <Route path='videos' element={<Videos />} />
+            <Route path='authors' element={<Autors />} />
+          </Route>
+        </Routes>
+        </Suspense>
+          
     </div>
   );
 }

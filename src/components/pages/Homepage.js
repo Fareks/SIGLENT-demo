@@ -9,6 +9,7 @@ import MainSection from "../main-section/main-section";
 
 import React,{ lazy, Suspense, useState, useRef, useEffect } from "react";
 import { Route , Routes , Link } from 'react-router-dom';
+import {motion, AnimatePresence} from 'framer-motion'
 import Videos from "./Videos";
 import { useInView } from 'react-intersection-observer';
 
@@ -39,7 +40,18 @@ const handleallContentLoaded = () => {
     const { ref, inView } = useInView();
 
     return (
-        <Suspense fallback={<div class="load"></div>}>
+        // <Suspense fallback={
+        //     <AnimatePresence >
+        //         <motion.div
+        //         key="load"
+        //         initial={{opacity:0}}
+        //         animate={{opacity:1}}
+        //         exit={{opacity:0}}
+        //         transition={{duration:2.4}}
+        //         class="load">123123123</motion.div>
+        //     </AnimatePresence>
+        
+        // }>
             <div>
                 <MainSection/>
                 <Label text="ОБЛАДНАННЯ SIGLENT"/>
@@ -79,7 +91,7 @@ const handleallContentLoaded = () => {
 
                 
             </div>
-        </Suspense>
+        // </Suspense>
         
         
         
