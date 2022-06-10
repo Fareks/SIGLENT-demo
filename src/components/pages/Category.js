@@ -8,6 +8,7 @@ import { getCurrentCategoryUA } from "./Category-components/category-path" ;
 import RiLoaderLine from "react-icons/ri"
 import "./Category-components/category.css";
 import sad_icon from "../../img-content/icons/sad.png"
+import cherry from "../../img-content/icons/cherry.gif"
 //елемент категорії - лінк-картка товару
     const CategoryItem = ({link, offerName, picture}) => {
    
@@ -55,7 +56,7 @@ import sad_icon from "../../img-content/icons/sad.png"
                         initial={{opacity:0}}
                         animate={{opacity:1}}
                         className="empty-category">
-                        <img src={sad_icon} width="80" height="80" alt="" />
+                        <img src={cherry} width="120" height="120" alt="" />
                         <p 
                         style={{fontSize: "18px", display:"flex",textAlign:"center",justifyContent:"center",margin:"40px 0px"}}>Упс... У даній категорії товари тимчасово недоступні.
                         </p>
