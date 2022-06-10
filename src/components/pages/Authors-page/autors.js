@@ -8,16 +8,19 @@ import  reacticon from "../../../img-content/autors/reacticon.png"
 import  routericons from "../../../img-content/autors/routericons.png"
 import  githubicons from "../../../img-content/autors/githubicons.png"
 import  linkedin from "../../../img-content/autors/linkedin icon.png"
+import  netlifyicons from "../../../img-content/autors/netlifyicons.png"
 import HeaderMenuContainer from "../../header-menu/header-menu-container";
 
 
-const AutorItem = ({icon,name,credits,social_icon=false,linkedin_link}) => {
+const AutorItem = ({icon,name,credits,social_icon=false,linkedin_link,is_link_button=false,link}) => {
     return (
-        <motion.div 
+        <motion.a 
         initial={{opacity:0, x:-10,backgroundColor:"#FFFFFF"}}
         animate={{opacity:1,x:0,backgroundColor:"#FFFFFF" }}
         whileHover={{scale:1.01,backgroundColor:"#F2F4FA"}}
-        className="autor-card-main-container">
+        className={is_link_button ? "autor-card-main-container-link" : "autor-card-main-container"}
+        href={is_link_button ? link : false}
+        >
             <div className="image-zone">
                <img src={icon}  height="90" width="90" alt="" />
                {social_icon && (
@@ -38,7 +41,7 @@ const AutorItem = ({icon,name,credits,social_icon=false,linkedin_link}) => {
 
             <p className="autor-name">{name}</p>
             <p className="autor-credits">{credits}</p>
-        </motion.div>
+        </motion.a>
     );
 }
 
@@ -86,7 +89,48 @@ return (
                 />
             </div>
         </div>
+        <div className="autors-zone">
+            <div className="autors-label">
+                    <p className="autors-label-text">
+                        Технології
+                    </p>
+                    <div className="autors-label-line"></div>
 
+            </div>
+            <div className="autors-main-container">
+                <AutorItem 
+                icon={reacticon}
+                name="React"
+                credits="JavaScript бібліотека"
+                is_link_button={true}
+                link="https://uk.reactjs.org/"
+                />
+
+                <AutorItem 
+                icon={routericons}
+                name="React Router"
+                credits="Бібліотека маршрутизації"
+                is_link_button={true}
+                link="https://reactrouter.com/"
+                />
+
+                <AutorItem 
+                icon={githubicons}
+                name="GitHub"
+                credits="Репозиторій"
+                is_link_button={true}
+                link="https://github.com/Fareks/Siglent-demo"
+                />
+
+                <AutorItem 
+                icon={netlifyicons}
+                name="Netlify"
+                credits="Хостинг"
+                is_link_button={true}
+                link="https://www.netlify.com/"
+                />
+            </div>
+        </div>
         
     </div>
     
