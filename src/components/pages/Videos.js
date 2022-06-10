@@ -6,7 +6,7 @@ import video_Siglent_SDM3055 from '../../img-content/video-img/video_Siglent_SDM
 import video_play_icon from '../../img-content/video-img/videoplay-icon.png';
 import { useState } from 'react';
 import animateScroll from 'react-scroll/modules/mixins/animate-scroll';
-
+import { motion } from 'framer-motion';
 
 const VideoItems = ({video_data,set_cur_video}) => {
        const elements = video_data.map((item) => {
@@ -64,7 +64,10 @@ const Videos = () => {
 
     return (
         
-     <div className='video-section-container-main'>
+     <motion.div
+     initial={{opacity:0}}
+     animate={{opacity:1}}
+     className='video-section-container-main'>
          <div className="video-header">
              <p className='video-header-text-1'>Огляди продукції Siglent</p>
              <p className='video-header-text-2'>Дивись останні відеоогляди та дізнайся все про продукцію SIGLENT</p>
@@ -93,7 +96,7 @@ const Videos = () => {
         <div className="video-items-container">
             <VideoItems video_data={video_data} set_cur_video={updateSetCurrentVideo}/>
         </div>
-     </div>
+     </motion.div>
     );
     };
     
