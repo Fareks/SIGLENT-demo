@@ -21,7 +21,7 @@ const Videos  = React.lazy(() => import('./components/pages/Videos'));
 const Autors  = React.lazy(() => import('./components/pages/Authors-page/autors'));
 const Offer  = React.lazy(() => import('./components/pages/Offer'));
 const Category  = React.lazy(() => import('./components/pages/Category'));
-const Contacts  = React.lazy(() => import('./components/pages/Contacts'));
+const Contacts  = React.lazy(() => import('./components/pages/Contacts-components/Contacts'));
 
 function App() { 
 const axios  = require('axios');
