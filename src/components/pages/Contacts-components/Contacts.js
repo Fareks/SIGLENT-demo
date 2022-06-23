@@ -47,9 +47,7 @@ return (
                 </div>
             </div>
         </div>
-        <div className="map-main-container">
-            <img src={mapImg} alt="" className='mapImg'/>
-        </div>
+
      </div>
  </div>
 );
